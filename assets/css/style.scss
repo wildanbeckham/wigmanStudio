@@ -1,0 +1,146 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+.text {
+  color: var(--primary);
+}
+
+:root {
+  --bg: #d9e4ff;
+  --primary: #326cf9;
+  --footer: #0d1317;
+}
+
+// Navbar
+#navbar {
+  padding: 20px 0px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 100%;
+  .bt {
+    color: #000;
+  }
+  .bt:hover {
+    color: var(--primary) !important;
+    text-decoration: underline;
+  }
+  .btn-nav {
+    background-color: var(--bg);
+    color: var(--primary);
+  }
+}
+#navbar.scrolled {
+  background-color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+// Navbar End
+
+// Hero
+#hero {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg);
+  .parallax {
+    height: 100%;
+    width: 99%;
+    overflow: initial;
+    background-position: center;
+    background-image: url(../img/hero/3.png), url(../img/hero/2.png), url(../img/hero/1.png);
+  }
+}
+// Hero End
+
+// Content
+#content {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+// Content End
+
+// Content2
+#content2 {
+  background-color: var(--bg);
+  .card-body {
+    border-radius: 15px;
+  }
+}
+// Content2 End
+
+// Work
+#work {
+  .card {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(70%);
+    transition: 0.5s;
+    border: none;
+    .card-img-overlay {
+      display: flex;
+      justify-content: right;
+      align-items: flex-end;
+      a {
+        display: none;
+      }
+    }
+  }
+  .card:hover {
+    height: 100%;
+    width: 100%;
+    filter: grayscale(0%);
+    cursor: pointer;
+    a {
+      display: inline;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+  }
+}
+// Work End
+
+// Colab
+#colab {
+  background-color: var(--primary);
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+// Colab End
+
+// About
+#about {
+  img {
+    // height: 100%;
+    width: 100%;
+  }
+  .video-gallery {
+    width: 100%;
+    height: 100%;
+  }
+}
+// About End
+
+// About
+#blog {
+  background-color: var(--bg);
+  .bg-card {
+    border-radius: 16px;
+    img {
+      border-radius: 16px 16px 0 0;
+    }
+  }
+}
+// About End
+
+// Footer
+#footer {
+  background-color: var(--footer);
+}
+// Footer End

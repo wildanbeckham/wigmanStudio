@@ -1,0 +1,147 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.text {
+  color: var(--primary);
+}
+
+:root {
+  --bg: #d9e4ff;
+  --primary: #326cf9;
+  --footer: #0d1317;
+}
+
+#navbar {
+  padding: 20px 0px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: 100%;
+}
+
+#navbar .bt {
+  color: #000;
+}
+
+#navbar .bt:hover {
+  color: var(--primary) !important;
+  text-decoration: underline;
+}
+
+#navbar .btn-nav {
+  background-color: var(--bg);
+  color: var(--primary);
+}
+
+#navbar.scrolled {
+  background-color: #fff;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  -webkit-box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+#hero {
+  height: 100%;
+  width: 100%;
+  background-color: var(--bg);
+}
+
+#hero .parallax {
+  height: 100%;
+  width: 99%;
+  overflow: initial;
+  background-position: center;
+  background-image: url(../img/hero/3.png), url(../img/hero/2.png), url(../img/hero/1.png);
+}
+
+#content img {
+  height: 100%;
+  width: 100%;
+}
+
+#content2 {
+  background-color: var(--bg);
+}
+
+#content2 .card-body {
+  border-radius: 15px;
+}
+
+#work .card {
+  height: 100%;
+  width: 100%;
+  -webkit-filter: grayscale(70%);
+          filter: grayscale(70%);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  border: none;
+}
+
+#work .card .card-img-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+#work .card .card-img-overlay a {
+  display: none;
+}
+
+#work .card:hover {
+  height: 100%;
+  width: 100%;
+  -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+  cursor: pointer;
+}
+
+#work .card:hover a {
+  display: inline;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#colab {
+  background-color: var(--primary);
+}
+
+#colab img {
+  height: 100%;
+  width: 100%;
+}
+
+#about img {
+  width: 100%;
+}
+
+#about .video-gallery {
+  width: 100%;
+  height: 100%;
+}
+
+#blog {
+  background-color: var(--bg);
+}
+
+#blog .bg-card {
+  border-radius: 16px;
+}
+
+#blog .bg-card img {
+  border-radius: 16px 16px 0 0;
+}
+
+#footer {
+  background-color: var(--footer);
+}
+/*# sourceMappingURL=style.css.map */
