@@ -7,6 +7,16 @@ html {
 .text {
   color: var(--primary);
 }
+.button {
+  color: #fff;
+  background-color: var(--primary);
+  transition: 0.3s;
+}
+.button:hover {
+  color: var(--primary);
+  background-color: #fff;
+  border-color: var(--primary);
+}
 
 :root {
   --bg: #d9e4ff;
@@ -30,6 +40,11 @@ html {
   .btn-nav {
     background-color: var(--bg);
     color: var(--primary);
+    transition: 0.3s;
+  }
+  .btn-nav:hover {
+    background-color: var(--primary);
+    color: #fff;
   }
 }
 #navbar.scrolled {
@@ -111,6 +126,16 @@ html {
     height: 100%;
     width: 100%;
   }
+  .btn-colab {
+    background-color: #fff;
+    color: var(--primary);
+    transition: 0.3s;
+  }
+  .btn-colab:hover {
+    background-color: var(--primary);
+    color: #fff;
+    border-color: #fff;
+  }
 }
 // Colab End
 
@@ -135,6 +160,13 @@ html {
     img {
       border-radius: 16px 16px 0 0;
     }
+    .btn-blog {
+      color: var(--primary);
+      transition: 0.3s;
+    }
+    .btn-blog:hover {
+      margin-left: 5px;
+    }
   }
 }
 // About End
@@ -144,3 +176,123 @@ html {
   background-color: var(--footer);
 }
 // Footer End
+
+// Profile
+#profile {
+  width: 100%;
+  height: 100%;
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+// Profile End
+
+// Team
+#team {
+  .card {
+    border-radius: 19px;
+    width: 100%;
+    height: 520px;
+    img {
+      height: 100%;
+      width: 100%;
+      filter: grayscale(100%);
+      object-fit: cover;
+    }
+    .card-img-overlay {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 0;
+      .team-bungkus {
+        background: rgba(39, 85, 195, 0.6);
+        border-radius: 15px;
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.3s ease-in;
+      }
+    }
+  }
+  .card:hover {
+    .card-img-overlay {
+      .team-bungkus {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}
+// Team End
+
+// Detail
+#detail {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+}
+// Detail End
+
+@media only screen and (max-width: 991px) {
+  #hero {
+    .parallax {
+      -webkit-backdrop-filter: brightness(0.3);
+      backdrop-filter: brightness(0.1);
+    }
+    .bungkus-hero {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: #fff;
+      -webkit-backdrop-filter: brightness(0.1);
+      backdrop-filter: brightness(0.3);
+      p {
+        color: #fff !important;
+      }
+    }
+  }
+
+  #about {
+    .video-gallery {
+      padding-top: 70px;
+    }
+  }
+
+  #blog {
+    .pembungkus-blog {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+
+  #team {
+    .pembungkus-profile {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #blog {
+    .pembungkus-blog {
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+
+  #team {
+    .pembungkus-profile {
+      display: grid;
+      grid-template-columns: auto;
+    }
+  }
+
+  #detail {
+    .img-detail {
+      padding: 0 !important;
+    }
+  }
+}

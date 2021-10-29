@@ -9,6 +9,19 @@ html {
   color: var(--primary);
 }
 
+.button {
+  color: #fff;
+  background-color: var(--primary);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.button:hover {
+  color: var(--primary);
+  background-color: #fff;
+  border-color: var(--primary);
+}
+
 :root {
   --bg: #d9e4ff;
   --primary: #326cf9;
@@ -34,6 +47,13 @@ html {
 #navbar .btn-nav {
   background-color: var(--bg);
   color: var(--primary);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#navbar .btn-nav:hover {
+  background-color: var(--primary);
+  color: #fff;
 }
 
 #navbar.scrolled {
@@ -120,6 +140,19 @@ html {
   width: 100%;
 }
 
+#colab .btn-colab {
+  background-color: #fff;
+  color: var(--primary);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#colab .btn-colab:hover {
+  background-color: var(--primary);
+  color: #fff;
+  border-color: #fff;
+}
+
 #about img {
   width: 100%;
 }
@@ -141,7 +174,132 @@ html {
   border-radius: 16px 16px 0 0;
 }
 
+#blog .bg-card .btn-blog {
+  color: var(--primary);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#blog .bg-card .btn-blog:hover {
+  margin-left: 5px;
+}
+
 #footer {
   background-color: var(--footer);
+}
+
+#profile {
+  width: 100%;
+  height: 100%;
+}
+
+#profile img {
+  height: 100%;
+  width: 100%;
+}
+
+#team .card {
+  border-radius: 19px;
+  width: 100%;
+  height: 520px;
+}
+
+#team .card img {
+  height: 100%;
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#team .card .card-img-overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  padding: 0;
+}
+
+#team .card .card-img-overlay .team-bungkus {
+  background: rgba(39, 85, 195, 0.6);
+  border-radius: 15px;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: visibility 0s, opacity 0.3s ease-in;
+  transition: visibility 0s, opacity 0.3s ease-in;
+}
+
+#team .card:hover .card-img-overlay .team-bungkus {
+  visibility: visible;
+  opacity: 1;
+}
+
+#detail img {
+  height: 100%;
+  width: 100%;
+}
+
+@media only screen and (max-width: 991px) {
+  #hero .parallax {
+    -webkit-backdrop-filter: brightness(0.3);
+    backdrop-filter: brightness(0.1);
+  }
+  #hero .bungkus-hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    color: #fff;
+    -webkit-backdrop-filter: brightness(0.1);
+    backdrop-filter: brightness(0.3);
+  }
+  #hero .bungkus-hero p {
+    color: #fff !important;
+  }
+  #about .video-gallery {
+    padding-top: 70px;
+  }
+  #blog .pembungkus-blog {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+  #team .pembungkus-profile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto;
+        grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  #blog .pembungkus-blog {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #team .pembungkus-profile {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  #detail .img-detail {
+    padding: 0 !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
