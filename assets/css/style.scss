@@ -291,6 +291,13 @@ html {
       grid-template-columns: auto auto;
     }
   }
+
+  #detail_blog {
+    .pembungkus-blog {
+      display: grid;
+      grid-template-columns: auto auto;
+    }
+  }
 }
 
 @media only screen and (max-width: 470px) {
@@ -311,6 +318,13 @@ html {
   #detail {
     .img-detail {
       padding: 0 !important;
+    }
+  }
+
+  #detail_blog {
+    .pembungkus-blog {
+      display: grid;
+      grid-template-columns: auto;
     }
   }
 }
