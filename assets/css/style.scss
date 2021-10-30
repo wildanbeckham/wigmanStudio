@@ -225,14 +225,32 @@ html {
 }
 // Team End
 
-// Detail
+// Detail Work
 #detail {
   img {
     height: 100%;
     width: 100%;
   }
 }
-// Detail End
+// Detail Work End
+
+// Detail Blog
+#detail_blog {
+  .img-hero-blog {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    background-size: cover;
+  }
+  .btn-blog {
+    color: var(--primary);
+    transition: 0.3s;
+  }
+  .btn-blog:hover {
+    margin-left: 5px;
+  }
+}
+// Detail Blog End
 
 @media only screen and (max-width: 991px) {
   #hero {

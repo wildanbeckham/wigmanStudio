@@ -245,6 +245,24 @@ html {
   width: 100%;
 }
 
+#detail_blog .img-hero-blog {
+  height: 400px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  background-size: cover;
+}
+
+#detail_blog .btn-blog {
+  color: var(--primary);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#detail_blog .btn-blog:hover {
+  margin-left: 5px;
+}
+
 @media only screen and (max-width: 991px) {
   #hero .parallax {
     -webkit-backdrop-filter: brightness(0.3);
